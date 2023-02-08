@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinica.controller.MedicController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="400.0" prefWidth="315.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="39.0" text="id" />
+                <TableColumn fx:id="cnp" prefWidth="86.0" text="CNP Pacient" />
+                  <TableColumn fx:id="nume" prefWidth="79.0" text="Nume Pacient" />
+                  <TableColumn fx:id="data" prefWidth="109.0" text="data" />
+              </columns>
+            </TableView>
+            <TableView fx:id="sefTable" disable="true" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="288.0">
+               <columns>
+                  <TableColumn fx:id="id1" prefWidth="39.0" text="id" />
+                  <TableColumn fx:id="cnp1" prefWidth="86.0" text="CNP Pacient" />
+                  <TableColumn fx:id="nume1" prefWidth="94.0" text="Nume Pacient" />
+                  <TableColumn fx:id="data1" prefWidth="130" text="data" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

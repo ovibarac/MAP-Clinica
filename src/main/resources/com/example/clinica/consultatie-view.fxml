@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinica.controller.ConsultatieController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="214.0">
+               <children>
+                  <TextField fx:id="cnp" promptText="CNP pacient" />
+                  <TextField fx:id="nume" promptText="Nume pacient" />
+                  <DatePicker fx:id="data" />
+                  <Spinner fx:id="ora" />
+                  <ComboBox fx:id="medic" prefWidth="150.0" promptText="Medic" />
+               </children>
+            </VBox>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#handleAddConsultatie" text="Add consultatie" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#handleDeleteConsultatie" text="Delete consultatie">
+               <graphic>
+                  <TextField fx:id="idcons" promptText="id consultatie" />
+               </graphic></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
